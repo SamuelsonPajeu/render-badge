@@ -25,11 +25,12 @@ public class RenderController {
         String status = this.renderService.getStatusByApplicationName(projectName);
         String color;
 
+        System.out.println(status);
         switch (status){
             case "live":
                 color = "green";
                 break;
-            case "failed":
+            case "build_failed":
                 color = "red";
                 break;
             default:
