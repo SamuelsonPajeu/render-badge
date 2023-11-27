@@ -1,7 +1,7 @@
 # Render Dashboard Status Badge
  Get the status for you last deploy from Render Dashboard as Bagde tags for README files (See bellow)
 
-![Tests](https://github.com/SamuelsonPajeu/desafio_palavra/actions/workflows/tests.yml/badge.svg) ![Image](https://render-badge-samuelsonpajeu.onrender.com/by_name?projectName=render-badge-samuelsonpajeu)
+![Image](https://render-badge-samuelsonpajeu.onrender.com/by_name?projectName=render-badge-samuelsonpajeu)
 
 
 ## Install
