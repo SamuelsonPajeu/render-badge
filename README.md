@@ -23,6 +23,7 @@
 
 ## Usage
 - LIVE APPLICATION: https://render-badge-samuelsonpajeu.onrender.com/ (create your own instance by fork this project)
+- DOC: https://render-badge-samuelsonpajeu.onrender.com/swagger-ui/index.html
 - ENDPOINT: http://localhost:8080/
 
 #### Get badge
