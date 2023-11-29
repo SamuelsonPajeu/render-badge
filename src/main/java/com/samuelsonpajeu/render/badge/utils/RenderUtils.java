@@ -18,4 +18,17 @@ public class RenderUtils {
         return secret;
     }
 
+    public boolean isCacheControlSet() {
+        String sEnv = System.getenv("CACHE-CONTROL");
+        if (sEnv == null || sEnv.isEmpty()){
+            return false;
+        }
+        return true;
+    }
+
+    public String getCacheControl() {
+        String sEnv = System.getenv("CACHE-CONTROL");
+        return sEnv;
+    }
+
 }

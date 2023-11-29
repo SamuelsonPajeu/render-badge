@@ -3,6 +3,7 @@ package com.samuelsonpajeu.render.badge.controller;
 import com.samuelsonpajeu.render.badge.entities.DeployObject;
 import com.samuelsonpajeu.render.badge.service.RenderService;
 import com.samuelsonpajeu.render.badge.service.StaticBagdeService;
+import com.samuelsonpajeu.render.badge.utils.RenderUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;
 
@@ -21,6 +22,7 @@ public class RenderController {
     @GetMapping("/by_name")
     public ResponseEntity getBadgeByApplicationName(@RequestParam String projectName) {
         DeployObject serviceObject = new DeployObject();
+        RenderUtils renderUtils = new RenderUtils();
 
         String status = this.renderService.getStatusByApplicationName(projectName);
         String color;
@@ -43,8 +45,13 @@ public class RenderController {
 
         String data = staticBagdeService.retrieveAPIData(status, color);
 
+
         HttpHeaders header = new HttpHeaders();
         header.set("Content-Type","image/svg+xml;charset=utf-8");
+
+        if (renderUtils.isCacheControlSet()){
+            header.set("Cache-Control", renderUtils.getCacheControl());
+        }
 
         return ResponseEntity.ok()
                 .headers(header)
