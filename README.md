@@ -1,9 +1,9 @@
 # Render Dashboard Status Badge
- Get the status for you last deploy from Render Dashboard as Bagde tags for README files (See bellow)
+Retrieve the status of your latest deployment from the Render Dashboard as badge tags for README files
 
 ![Image](https://render-badge-samuelsonpajeu.onrender.com/by_name?projectName=render-badge-samuelsonpajeu)
 
-![image](https://github.com/SamuelsonPajeu/render-badge/assets/79151331/85ec1415-4886-4a64-8cb9-25538365d3fc)
+![image](https://github.com/SamuelsonPajeu/render-badge/assets/79151331/544cf095-99b6-46c7-86f0-0ee2f22b7116)
 
 
 ## Install
